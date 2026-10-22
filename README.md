@@ -7,7 +7,7 @@ A lightweight sprint planning and tracking system. Manages user stories, sprints
 - User story management with acceptance criteria and story points
 - Sprint planning and execution tracking
 - Velocity calculation across sprints
-- Story point estimation and burn tracking
+- Story point estimation
 - RESTful API design for agile workflows
 
 ## Setup
@@ -48,7 +48,7 @@ curl http://localhost:8000/metrics/velocity
 - No authentication (would add JWT in production)
 - SQLite instead of Postgres
 - No task assignment to individuals yet
-- Burndown is calculated on-demand, not cached
+- Sprint progress is a completion summary (total vs completed points) calculated on demand; there is no day-by-day burndown
 
 ## Next steps
 

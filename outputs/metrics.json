@@ -1,0 +1,54 @@
+{
+  "repo": "agile-sprint-api",
+  "verification": "Ran the original app through FastAPI TestClient with a throwaway SQLite file. Two sprints built via the API: 12 done points in sprint 1 (plus one 3 point story left in progress), 8 done points in sprint 2.",
+  "velocity_response": {
+    "average_velocity": 10.0,
+    "completed_sprints": 2,
+    "recent_sprints": [
+      {
+        "sprint_id": 1,
+        "sprint_name": "Verify Sprint 1",
+        "points_completed": 12
+      },
+      {
+        "sprint_id": 2,
+        "sprint_name": "Verify Sprint 2",
+        "points_completed": 8
+      }
+    ]
+  },
+  "expected_average_velocity": 10.0,
+  "velocity_matches_expectation": true,
+  "sprint_1_summary": {
+    "sprint": {
+      "goal": null,
+      "end_date": "2026-11-05T19:13:43.399888",
+      "name": "Verify Sprint 1",
+      "id": 1,
+      "start_date": "2026-10-22T19:13:43.399888",
+      "status": "completed"
+    },
+    "total_stories": 3,
+    "total_points": 15,
+    "completed_points": 12,
+    "completion_rate": 80.0
+  },
+  "routes_present": [
+    "/",
+    "/docs",
+    "/docs/oauth2-redirect",
+    "/metrics/velocity",
+    "/openapi.json",
+    "/redoc",
+    "/sprints",
+    "/sprints/{sprint_id}",
+    "/sprints/{sprint_id}/complete",
+    "/sprints/{sprint_id}/start",
+    "/sprints/{sprint_id}/summary",
+    "/stories",
+    "/stories/{story_id}"
+  ],
+  "burndown_route_status": 404,
+  "burndown_exists": false,
+  "own_test_suite": "5 tests in tests/test_basic.py, all passing"
+}
